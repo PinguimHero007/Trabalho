@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um site para aprendizagem</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            /*distancia entre as bordas*/
+            margin: 1px;
+        }
+/*Centraliza na tela*/
+        body {
+            margin: 0 auto;
+        }
+
+/*Aqui em baixo vai aparecer a imagem de fundo*/
+        header {
+
+            background: url(Sobremim.png) no-repeat center;
+            height: 900px;
+            top: 1;
+/*
+//Efeitos para teste
+            grid-column-start:6 ;
+            grid-column-end: 12;
+            background-color: blue;
+            */
+        }
+
+        /*config da fonte*/
+
+        .fonte{
+            font-size: 2rem;
+            color:black
+
+        }
+
+        /*para deixar o grid funcionando*/
+
+        .container{
+            display: grid;
+        }
+
+        
+        .menu{
+            grid-column-start:6 ;
+            grid-column-end: 12;
+            justify-content:center; /*centraliza*/
+            gap: 20px;
+        }
+
+        /*config do contexto/inbformações do sit*/
+        .principal{
+            grid-column-start:4 ;
+            grid-column-end: 12;
+            padding-left: 280px;
+            padding-right: 280px;
+            text-align: justify;
+        }
+        ul{
+            list-style-type: none;
+            color: black;
+        }
+        a,
+        /*config das bordas*/
+        a:link {
+            text-decoration: none;
+            padding: 16px 160px;
+            border: solid #000000 5px;
+        }
+
+        li {
+            float:left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+<p class="fonte"></p>
+
+    </header>
+    <nav class="container menu">
+<ul>
+    <li><a href="Portfólio.html">Portfólio</a></li>
+    <li><a href="Formação.html">Formação</a></li>
+    <li><a href="Contato.html">Contato</a></li>
+</ul>
+    </nav>
+    <section class="principal">
+        <br><br><br><br><br>
+        <h1>
+            Sobre mim
+        </h1>
+        <br>
+        <h3>Por onde eu começo? alguns diram que é pelo começo, se você acha isso, tenho algo a dizer para você, você está certo!
+            então para começar devo dizer que sou alguém sempre buscando a melhora pessoal, sendo um filho melhor, um irmão melhor,
+            um amigo melhor, sendo alguém melhor do que eu já fui no passado (mesmo que esse passado seja de 1 dia) porque no futuro
+            quero olhar ao passado e dizer a mim mesmo que EU SOU A MELHOR VERSÃO DE MIM MESMO!!! coof* foi mau eu me engasguei.
+        </h3>
+        <br><br>
+        <h3>Minha história começa no hospital santa helena, quando eu nasci...Eu morava na Bahia na cidade de camaçari, porém devido
+            a problemas econômicos na região local tive que me mudar para um outro estado, Mato Grosso do Sul na cidade de Campo Grande
+            foi onde eu terminei meu ensino médio, aliás faz pouco tempo que eu terminei e me engressei nessa jornada de me tornar um 
+            programador full stack. Meus hobbys são escutar músicas, principalmente rock, eletrônica e clássica, gosto de tocar com meu
+            instrumento que é um teclado, gosto de ver séries e filmes, gosto de ler mangá, quadrinhos e de vez em quando um livro, gosto bastante
+            de jogar jogos eletrônicos e gosto bastante de ficar com meus familiares e amigos.
+        </h3>
+        <br><br>
+        <h3>Antes que eu me esqueça, eu tenho 18 anos atualmente, mas caso você veja isso bem mais tarde tipo daqui alguns anos, a data
+            que isso tá sendo escrito é 31/08/2024 e finalisando...Eu me chamo Kaio Vinícius Gomes Gouveia uma pessoa assim como você.
+        </h3>
+        <br><br><br><br><br>
+    </section>
+</body>
+</html>

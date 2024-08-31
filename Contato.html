@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um site para aprendizagem</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            /*distancia entre as bordas*/
+            margin: 1px;
+        }
+/*Centraliza na tela*/
+        body {
+            margin: 0 auto;
+        }
+
+/*Aqui em baixo vai aparecer a imagem de fundo*/
+        header {
+
+            background: url(Contato.png) no-repeat center;
+            height: 900px;
+            top: 1;
+/*
+//Efeitos para teste
+            grid-column-start:6 ;
+            grid-column-end: 12;
+            background-color: blue;
+            */
+        }
+
+        /*config da fonte*/
+
+        .fonte{
+            font-size: 2rem;
+            color:black
+
+        }
+
+        /*para deixar o grid funcionando*/
+
+        .container{
+            display: grid;
+        }
+
+        
+        .menu{
+            grid-column-start:6 ;
+            grid-column-end: 12;
+            justify-content:center; /*centraliza*/
+            gap: 20px;
+        }
+
+        /*config do contexto/inbformações do sit*/
+        .principal{
+            grid-column-start:4 ;
+            grid-column-end: 12;
+            padding-left: 280px;
+            padding-right: 280px;
+            text-align: justify;
+        }
+        ul{
+            list-style-type: none;
+            color: black;
+        }
+        a,
+        /*config das bordas*/
+        a:link {
+            text-decoration: none;
+            padding: 16px 160px;
+            border: solid #000000 5px;
+        }
+
+        li {
+            float:left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+<p class="fonte"></p>
+
+    </header>
+    <nav class="container menu">
+<ul>
+    <li><a href="Portfólio.html">Portfólio</a></li>
+    <li><a href="Formação.html">Formação</a></li>
+    <li><a href="index.html">Quem sou eu?</a></li>
+</ul>
+    </nav>
+    <section class="principal">
+        <br><br><br><br><br>
+        <h1>
+            Contato
+        </h1>
+        <form action="" method="POST">
+
+            <br><br>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu Nome" size="50" maxlength="50">
+        <br>
+        <label for="Email">Email:</label>
+        <input type="text" name="nome" placeholder="Digite seu Email" size="50" maxlength="50">
+        <br><br><br><br><br><br>
+        <label for="mensagem">Mensagem:</label>
+        <input type="text" name="nome" placeholder="Digite sua mensagem para mim :v" size="50" maxlength="200">
+    <br><br>
+    
+    
+        <fieldset>
+            <label for="Conteúdo">Você gostou do meu site?</label>
+            <br><br>
+            <input type="checkbox" name="Linguagem[]" value="C++">Péssimo
+    
+            <input type="checkbox" name="Linguagem[]" value="Php">Não
+    
+            <input type="checkbox" name="Linguagem[]" value="delphi">Legal
+    
+            <input type="checkbox" name="Linguagem[]" value="Java">BOM DEMAIS!!!
+        </fieldset>
+    
+        <label for="Aprendizagem">Um site para aprendizagem</label>
+        <br><br>
+    
+        <input type="radio" name="Curso" value="Têm">Têm
+        <input type="radio" name="Curso" value="Algo">Algo
+        <input type="radio" name="Curso" value="Interessante">Interessante
+        <input type="radio" name="Curso" value="Aqui">Aqui
+    
+        <select name="faculdade">
+            <option value="?">?</option>
+            <option value="Contato">Contato</option>
+            <option value="Não">Não</option>
+            <option value="Funciona">Funciona</option>
+            <option value="é">é</option>
+            <option value="Visual">! visual !</option>
+        </select>
+        <br><br>
+        <input name="submit" type="submit" id="submit" Value="Enviar">
+        <br><br><br>
+        </form>
+    </section>
+</body>
+
+</html>

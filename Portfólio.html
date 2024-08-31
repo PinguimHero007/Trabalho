@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um site para aprendizagem</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            /*distancia entre as bordas*/
+            margin: 1px;
+        }
+/*Centraliza na tela*/
+        body {
+            margin: 0 auto;
+        }
+
+/*Aqui em baixo vai aparecer a imagem de fundo*/
+        header {
+
+            background: url(Portfólio.png) no-repeat center;
+            height: 900px;
+            top: 1;
+/*
+//Efeitos para teste
+            grid-column-start:6 ;
+            grid-column-end: 12;
+            background-color: blue;
+            */
+        }
+
+        /*config da fonte*/
+
+        .fonte{
+            font-size: 2rem;
+            color:black
+
+        }
+
+        /*para deixar o grid funcionando*/
+
+        .container{
+            display: grid;
+        }
+
+        
+        .menu{
+            grid-column-start:6 ;
+            grid-column-end: 12;
+            justify-content:center; /*centraliza*/
+            gap: 20px;
+        }
+
+        /*config do contexto/inbformações do sit*/
+        .principal{
+            grid-column-start:4 ;
+            grid-column-end: 12;
+            padding-left: 280px;
+            padding-right: 280px;
+            text-align: justify;
+        }
+        ul{
+            list-style-type: none;
+            color: black;
+        }
+        a,
+        /*config das bordas*/
+        a:link {
+            text-decoration: none;
+            padding: 16px 160px;
+            border: solid #000000 5px;
+        }
+
+        li {
+            float:left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+<p class="fonte"></p>
+
+    </header>
+    <nav class="container menu">
+<ul>
+    <li><a href="index.html">Quem sou eu?</a></li>
+    <li><a href="Formação.html">Formação</a></li>
+    <li><a href="Contato.html">Contato</a></li>
+</ul>
+    </nav>
+    <section class="principal">
+        <br><br><br><br><br>
+        <h1>
+            Portfólio
+        </h1>
+        <br>
+        <p><a href="https://github.com/PinguimHero007/Faculdade/tree/main/TrabalhoDaFaculdade">Alguns projetos que eu fiz!</a></p>
+        <br>  <br>  <br>  <br>
+        <h2>No link acima, você será redirecionado para o github aonde eu fiz algumas atividades com o auxilio de professores
+            como toda aprendizagem é feita
+        </h2>
+        <br>  <br>
+        <h2>Tudo feito no pycharm, e porfavor escreva exatamente como tá mostrando (caso a atividade pedir) para
+            que o código funcione corretamente.
+        </h2>
+        <br>  <br>  <br>  <br>
+    </section>
+</body>
+</html>
